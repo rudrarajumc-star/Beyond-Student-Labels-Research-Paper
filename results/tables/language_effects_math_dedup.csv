@@ -1,0 +1,10 @@
+outcome,term,coef,p,n,p_holm
+n_solution_steps,multilingual,0.577,0.085,1460,0.765
+n_solution_steps,ell_spanish,-0.334,0.087,1460,0.696
+n_operations,ell_mandarin,-2.249,0.101,1460,0.7070000000000001
+max_operand_magnitude,multilingual,-10.497,0.141,1457,0.8459999999999999
+max_operand_magnitude,ell_spanish,-8.958,0.212,1457,1.0
+n_operations,ell_spanish,-1.589,0.247,1460,0.988
+n_solution_steps,ell_mandarin,-0.153,0.446,1460,1.0
+max_operand_magnitude,ell_mandarin,-3.71,0.638,1457,1.0
+n_operations,multilingual,-0.548,0.725,1460,0.725

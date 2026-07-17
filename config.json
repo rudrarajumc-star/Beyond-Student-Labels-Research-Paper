@@ -1,0 +1,40 @@
+{
+  "temperature": 0.7,
+  "max_tokens": 1024,
+  "providers": {
+    "gemini": {
+      "model": "gemini-2.5-flash",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      "api_key_env": "GEMINI_API_KEY",
+      "seconds_between_calls": 4.5,
+      "skip": true
+    },
+    "llama": {
+      "model": "llama-3.3-70b-versatile",
+      "base_url": "https://api.groq.com/openai/v1",
+      "api_key_env": "GROQ_API_KEY",
+      "seconds_between_calls": 2.5
+    },
+    "gptoss": {
+      "model": "gpt-oss-120b",
+      "base_url": "https://api.cerebras.ai/v1",
+      "api_key_env": "CEREBRAS_API_KEY",
+      "seconds_between_calls": 2.5,
+      "max_tokens": 3000
+    },
+    "mistral": {
+      "model": "mistral-small-latest",
+      "base_url": "https://api.mistral.ai/v1",
+      "api_key_env": "MISTRAL_API_KEY",
+      "seconds_between_calls": 1.5
+    }
+  },
+  "judge_rotation": {
+    "gemini": "mistral",
+    "llama": "gptoss",
+    "gptoss": "mistral",
+    "mistral": "gptoss"
+  },
+  "_rotation_amendment": "2026-04-04, BEFORE any judging began: judges reassigned to the two providers with reliable quota (gptoss, mistral) because gemini/llama free tiers cannot support judge volume. All pairings remain cross-family. Original rotation: gemini->llama, llama->gptoss, gptoss->mistral, mistral->gemini.",
+  "_note": "All four providers are free-tier, no credit card, available in India. All use OpenAI-compatible endpoints. Verify exact model IDs in each console before the run, pin them here, record them in the report, and never change them mid-run."
+}

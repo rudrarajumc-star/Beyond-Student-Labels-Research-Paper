@@ -1,0 +1,40 @@
+# --- Secrets: NEVER commit these ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Logs and scratch ---
+*.log
+html2pdf*
+
+# --- PDF build artifacts (report/) ---
+report/_pdf_src.md
+report/_header.tex
+report/*.aux
+report/*.out
+report/*.toc
+
+# NOTE: data/ and results/ ARE committed on purpose (reproducibility).
+# The raw generations file is ~4 MB, which is fine for GitHub.
+
+# self-test scratch output
+data/*selftest*
+run.log
+judge.log
+*.command
+nohup.out
+Sample_Problems_for_Prof_Parameswari.html
+RATING_SHEET*
+testfile*
+_git_lock_quarantine/
