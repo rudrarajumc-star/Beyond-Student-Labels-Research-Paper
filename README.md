@@ -41,7 +41,7 @@ Mistral Small):
   ELL-Mandarin problems vs 0% elsewhere.
 - **AI-judge cultural blind spot.** The LLM judge scored all three human-flagged,
   stereotype-adjacent problems a perfect 5/5 on cultural neutrality.
-- **Reliability varies wildly by model** (unreadable-output 0.2%–8.1%; duplication 2.4%–18.9%).
+- **Reliability varies wildly by model** (unreadable-output 0.2%–8.1%; duplication 2.4%–19.3%).
 
 The primary finding is a **null**, framed as informative. See the paper for the full,
 unsoftened treatment of limitations (including a compressed "struggling" difficulty floor).
@@ -52,8 +52,42 @@ outputs, and separate estimation across all three prompt paraphrases.
 
 ## Verification status
 
-Every number in the paper was independently recomputed from the raw data in a July 2026
-audit; all reproduced. The audit also corrected four things, each disclosed in the paper:
+**Second audit, 6 August 2026 (pre-preprint).** Every quantitative claim was recomputed
+from raw data a second time before posting. Verified exactly: N = 1,620 (540 × 3 families);
+1,567 readable (96.7%); parse failure independent of condition (χ² = 3.34, *p* = .34);
+all of Table 2 (math columns), Table 3, Table 4, Table 5, Table 6, Table 7, Table 8;
+H1 level effects (steps +1.84, ops +10.28, magnitude +120.8, all *p* < .001; struggling
+n.s.); H3 linguistic effects (FK −0.887 / −0.918, *p*_holm = .0071 / .0120); H5 omnibus
+χ²(9) = 365.6, *p* = 2.9 × 10⁻⁷³, Cramér's *V* = 0.279; judge validation ρ = 0.70, 98%
+agreement, batch 1 = 28 GPT-OSS + 28 Mistral; the three human-flagged cultural items all
+scored 5/5 by the judge; de-duplication (107 removed, min *p*_holm = 0.70, Llama
+ELL-Spanish *d* −0.42 → −0.51); clustered-SE and English-only robustness (min *p* = .11
+and .12); power (.99 / .80 pooled, .67 within-model, 80% at *d* ≈ 0.35); name counts
+(Maria 80, 小明 50, María 48, Tom 27); Gemini 138 raw / 29 parsed.
+
+This audit **corrected two errors** now fixed in the paper:
+
+1. **Per-model duplication rates.** Previously reported as Llama 18.9% / Mistral 4.6%.
+   These did not reproduce under any tested definition. The correct figures, stable across
+   similarity-threshold and normalisation variants, are **Llama 19.3% / Mistral 4.2%**
+   (GPT-OSS 2.4% and the 8.1% overall figure were already correct).
+2. **A Discussion sentence** stated that a wrong answer ($20.93 vs. $21.00) "passed both a
+   careful human rater and an AI judge." The raw data show the judge scored it 1/5 — the
+   human missed it and the judge caught it. Corrected to match §4.9 and Appendix C.
+
+3. **A dropped citation.** Steele & Aronson (1995) was cut from the Introduction during a
+   rewrite while remaining in the reference list. Restored; all 24 references are now cited
+   and all 24 in-text citations resolve.
+
+Two clarifications were also added: Table 2's sentence-length column is computed on all
+readable items (n = 1,496), not English-only as the caption implied; and the 2×2 name
+tests use Yates's continuity correction while the omnibus test does not.
+
+The typeset PDF (`report/REPORT.pdf`, `arxiv/main.pdf`) was regenerated from the corrected
+Markdown on 6 August 2026, and every number in it was re-extracted and re-checked against
+the raw data files programmatically.
+
+An earlier July 2026 audit corrected four things, each disclosed in the paper:
 a mis-stated judge coefficient (−1.48 → −1.47), a word-count column corrupted by
 unsegmented Chinese text, a citation with the wrong journal, and — most importantly — the
 pre-registration's **overstated power claim** (`DESIGN.md` §5 says "power > .9 for d = 0.3
