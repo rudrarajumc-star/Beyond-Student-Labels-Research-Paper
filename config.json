@@ -35,6 +35,6 @@
     "gptoss": "mistral",
     "mistral": "gptoss"
   },
-  "_rotation_amendment": "2026-04-04, BEFORE any judging began: judges reassigned to the two providers with reliable quota (gptoss, mistral) because gemini/llama free tiers cannot support judge volume. All pairings remain cross-family. Original rotation: gemini->llama, llama->gptoss, gptoss->mistral, mistral->gemini.",
+  "_rotation_amendment": "2026-07-04, BEFORE any judging began: judges reassigned to the two providers with reliable quota (gptoss, mistral) because gemini/llama free tiers cannot support judge volume. All pairings remain cross-family. Original rotation: gemini->llama, llama->gptoss, gptoss->mistral, mistral->gemini.",
   "_note": "All four providers are free-tier, no credit card, available in India. All use OpenAI-compatible endpoints. Verify exact model IDs in each console before the run, pin them here, record them in the report, and never change them mid-run."
 }

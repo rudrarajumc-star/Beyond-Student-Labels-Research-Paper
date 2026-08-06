@@ -1,0 +1,14 @@
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setmonofont{DejaVu Sans Mono}[Scale=0.92]
+\newfontfamily\cjkfont{Noto Serif CJK SC}
+\usepackage{ucharclasses}
+\setTransitionsForCJK{\cjkfont}{\normalfont}
+\usepackage{newunicodechar}
+\newunicodechar{。}{{\cjkfont 。}}
+\newunicodechar{？}{{\cjkfont ？}}
+\newunicodechar{，}{{\cjkfont ，}}
+\usepackage{seqsplit}
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{\seqsplit{\oldtexttt{#1}}}
+\emergencystretch=2em

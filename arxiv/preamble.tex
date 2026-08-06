@@ -1,0 +1,19 @@
+% arXiv-safe XeLaTeX preamble: all fonts loaded by FILE NAME, not font name,
+% because arXiv's TeX Live has (almost) no fonts registered with fontconfig.
+% DejaVu TTFs ship with TeX Live; the small CJK subset font is bundled in fonts/.
+\usepackage{fontspec}
+\setmainfont{DejaVuSerif.ttf}[
+  BoldFont=DejaVuSerif-Bold.ttf,
+  ItalicFont=DejaVuSerif-Italic.ttf,
+  BoldItalicFont=DejaVuSerif-BoldItalic.ttf]
+\setmonofont{DejaVuSansMono.ttf}[Scale=0.85]
+\newfontfamily\cjkfont[Path=fonts/]{NotoSerifCJKsc-Subset.otf}
+\usepackage{ucharclasses}
+\setTransitionsForCJK{\cjkfont}{\normalfont}
+\usepackage{newunicodechar}
+\newunicodechar{。}{{\cjkfont 。}}
+\newunicodechar{？}{{\cjkfont ？}}
+\usepackage{seqsplit}
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{\oldtexttt{\seqsplit{#1}}}
+\emergencystretch=3em

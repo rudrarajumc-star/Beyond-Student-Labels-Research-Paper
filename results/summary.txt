@@ -14,8 +14,8 @@ multilingual  395  10
 Dep. Variable:       n_solution_steps   R-squared:                       0.284
 Model:                            OLS   Adj. R-squared:                  0.275
 Method:                 Least Squares   F-statistic:                     20.70
-Date:                Fri, 10 Apr 2026   Prob (F-statistic):           3.43e-63
-Time:                        13:22:29   Log-Likelihood:                -3422.6
+Date:                Fri, 17 Jul 2026   Prob (F-statistic):           3.43e-63
+Time:                        13:10:50   Log-Likelihood:                -3422.6
 No. Observations:                1567   AIC:                             6885.
 Df Residuals:                    1547   BIC:                             6992.
 Df Model:                          19                                         
@@ -59,8 +59,8 @@ Notes:
 Dep. Variable:           n_operations   R-squared:                       0.403
 Model:                            OLS   Adj. R-squared:                  0.396
 Method:                 Least Squares   F-statistic:                     34.38
-Date:                Fri, 10 Apr 2026   Prob (F-statistic):          5.04e-104
-Time:                        13:22:29   Log-Likelihood:                -6214.5
+Date:                Fri, 17 Jul 2026   Prob (F-statistic):          5.04e-104
+Time:                        13:10:50   Log-Likelihood:                -6214.5
 No. Observations:                1567   AIC:                         1.247e+04
 Df Residuals:                    1547   BIC:                         1.258e+04
 Df Model:                          19                                         
@@ -104,8 +104,8 @@ Notes:
 Dep. Variable:     max_operand_magnitude   R-squared:                       0.097
 Model:                               OLS   Adj. R-squared:                  0.086
 Method:                    Least Squares   F-statistic:                     8.927
-Date:                   Fri, 10 Apr 2026   Prob (F-statistic):           1.13e-24
-Time:                           13:22:29   Log-Likelihood:                -10645.
+Date:                   Fri, 17 Jul 2026   Prob (F-statistic):           1.13e-24
+Time:                           13:10:50   Log-Likelihood:                -10645.
 No. Observations:                   1564   AIC:                         2.133e+04
 Df Residuals:                       1544   BIC:                         2.144e+04
 Df Model:                             19                                         
@@ -149,8 +149,8 @@ Notes:
 Dep. Variable:               fk_grade   R-squared:                       0.337
 Model:                            OLS   Adj. R-squared:                  0.325
 Method:                 Least Squares   F-statistic:                     25.45
-Date:                Fri, 10 Apr 2026   Prob (F-statistic):           6.77e-74
-Time:                        13:22:29   Log-Likelihood:                -2425.5
+Date:                Fri, 17 Jul 2026   Prob (F-statistic):           6.77e-74
+Time:                        13:10:50   Log-Likelihood:                -2425.5
 No. Observations:                1121   AIC:                             4891.
 Df Residuals:                    1101   BIC:                             4992.
 Df Model:                          19                                         
@@ -194,8 +194,8 @@ Notes:
 Dep. Variable:      mean_sentence_len   R-squared:                       0.550
 Model:                            OLS   Adj. R-squared:                  0.544
 Method:                 Least Squares   F-statistic:                     99.73
-Date:                Fri, 10 Apr 2026   Prob (F-statistic):          3.33e-248
-Time:                        13:22:29   Log-Likelihood:                -3766.6
+Date:                Fri, 17 Jul 2026   Prob (F-statistic):          3.33e-248
+Time:                        13:10:50   Log-Likelihood:                -3766.6
 No. Observations:                1496   AIC:                             7573.
 Df Residuals:                    1476   BIC:                             7679.
 Df Model:                          19                                         
@@ -239,8 +239,8 @@ Notes:
 Dep. Variable:        rare_word_ratio   R-squared:                       0.199
 Model:                            OLS   Adj. R-squared:                  0.185
 Method:                 Least Squares   F-statistic:                     23.66
-Date:                Fri, 10 Apr 2026   Prob (F-statistic):           6.84e-69
-Time:                        13:22:29   Log-Likelihood:                 1684.6
+Date:                Fri, 17 Jul 2026   Prob (F-statistic):           6.84e-69
+Time:                        13:10:50   Log-Likelihood:                 1684.6
 No. Observations:                1121   AIC:                            -3329.
 Df Residuals:                    1101   BIC:                            -3229.
 Df Model:                          19                                         
@@ -284,8 +284,8 @@ Notes:
 Dep. Variable:            correctness   R-squared:                       0.365
 Model:                            OLS   Adj. R-squared:                  0.357
 Method:                 Least Squares   F-statistic:                     48.92
-Date:                Fri, 10 Apr 2026   Prob (F-statistic):          6.87e-143
-Time:                        13:22:29   Log-Likelihood:                -2612.8
+Date:                Fri, 17 Jul 2026   Prob (F-statistic):          6.87e-143
+Time:                        13:10:50   Log-Likelihood:                -2612.8
 No. Observations:                1567   AIC:                             5266.
 Df Residuals:                    1547   BIC:                             5373.
 Df Model:                          19                                         
@@ -329,8 +329,8 @@ Notes:
 Dep. Variable:     difficulty_alignment   R-squared:                       0.143
 Model:                              OLS   Adj. R-squared:                  0.133
 Method:                   Least Squares   F-statistic:                     11.43
-Date:                  Fri, 10 Apr 2026   Prob (F-statistic):           4.82e-33
-Time:                          13:22:29   Log-Likelihood:                -571.57
+Date:                  Fri, 17 Jul 2026   Prob (F-statistic):           4.82e-33
+Time:                          13:10:50   Log-Likelihood:                -571.57
 No. Observations:                  1567   AIC:                             1183.
 Df Residuals:                      1547   BIC:                             1290.
 Df Model:                            19                                         
@@ -374,8 +374,8 @@ Notes:
 Dep. Variable:                clarity   R-squared:                       0.097
 Model:                            OLS   Adj. R-squared:                  0.086
 Method:                 Least Squares   F-statistic:                     3.856
-Date:                Fri, 10 Apr 2026   Prob (F-statistic):           4.30e-08
-Time:                        13:22:30   Log-Likelihood:                -697.42
+Date:                Fri, 17 Jul 2026   Prob (F-statistic):           4.30e-08
+Time:                        13:10:50   Log-Likelihood:                -697.42
 No. Observations:                1566   AIC:                             1435.
 Df Residuals:                    1546   BIC:                             1542.
 Df Model:                          19                                         
@@ -419,8 +419,8 @@ Notes:
 Dep. Variable:     pedagogical_soundness   R-squared:                       0.045
 Model:                               OLS   Adj. R-squared:                  0.034
 Method:                    Least Squares   F-statistic:                     1.370
-Date:                   Fri, 10 Apr 2026   Prob (F-statistic):              0.131
-Time:                           13:22:30   Log-Likelihood:                 606.73
+Date:                   Fri, 17 Jul 2026   Prob (F-statistic):              0.131
+Time:                           13:10:50   Log-Likelihood:                 606.73
 No. Observations:                   1567   AIC:                            -1173.
 Df Residuals:                       1547   BIC:                            -1066.
 Df Model:                             19                                         

@@ -1,0 +1,57 @@
+id	topic	problem_text	answer_text	correctness	difficulty_alignment	clarity	pedagogical_soundness	cultural_neutrality
+e11462f417f8	two_step_eq	Solve for x: 7 - 2(3x + 4) = 5x - 9.	8/11					
+4c2b5606d78f	proportions	A recipe that serves 4 people requires 3 cups of flour. How many cups of flour are needed to serve 10 people?	7.5 cups					
+5a3a6b2dce14	proportions	A school bus can hold 48 students and uses 12 gallons of fuel for a 60‑mile trip. Assuming the bus uses the same amount of fuel per mile, how many gallons of fuel will be needed for a 150‑mile trip with the same number of students?	30 gallons					
+9c75247e606f	rationals	Calculate the sum: -3/4 + (-0.25) - 1.5	-2.5					
+6b5be9470fb4	proportions	A school cafeteria buys napkins that are sold in packs. One pack containing 12 napkins costs $5.40. How much will 30 napkins cost? (Assume the price is directly proportional to the number of napkins.)	$13.50					
+546203dabb72	two_step_eq	Solve for x: 3x - 7 = 14	x = 7					
+16f39b560197	two_step_eq	Resuelve para x: 3x + 5 = 14	x = 3					
+ac6b7036c975	proportions	A recipe needs 3 cups of flour to make 24 cookies. How many cups of flour are needed to make 40 cookies? Write your answer as a fraction or a mixed number if needed.	5 cups					
+9e3b7542ed51	proportions	A school orders printer paper for its computer lab. Currently, 8 printers together use a total of 240 sheets of paper each day. The school plans to add 5 more printers, making a total of 13 printers, and wants to keep the same usage per printer. Each ream contains 500 sheets and costs $8.75. How many reams of paper must the school purchase for one week (7 days) of operation, and what is the total cost?	$52.50					
+758f6b9dbea5	rationals	Calculate: -3/4 + (-0.5) - (-1/2). Write the answer as a simplified fraction.	-3/4					
+3fea0326ac80	proportions	A recipe for 4 servings of lemonade requires 6 lemons. How many lemons are needed to make 10 servings of lemonade?	15 lemons					
+26efbb41ace0	percents	A video game is originally priced at $40. The store offers a 25% discount. After the discount, a sales tax of 6% is added. How much does the video game cost after the discount and tax? Round to the nearest cent.	$31.80					
+73e6253cf0cc	circles	A circular garden has a radius of 4 meters. Find the area and the circumference of the garden. (Use π ≈ 3.14)  El jardín circular tiene un radio de 4 metros. Encuentra el área y la circunferencia.	Area = 50.24 m²; Circumference = 25.12 m					
+11ecd67001f5	proportions	A factory produces 480 widgets in 8 hours using 6 identical machines that work at the same constant rate. The factory wants to increase production to 1,200 widgets in the same 8‑hour period. (a) How many machines must be operating to achieve this goal? (b) If each machine costs $2,500, what is the total cost for the required machines?	a) 15 machines; b) $37,500					
+c037d93079e3	rationals	Calculate the value of the following expression: -3/4 + (-0.25) - (-1.5). Show all steps and simplify your answer to a decimal.	0.5					
+bd2c3f7449f3	percents	A video game costs $45. It is on sale for 20% off. After the discount, a sales tax of 6% is added. How much does the student pay in total?	$38.16					
+2ee0a69147ab	circles	A circular garden has a radius of 5 cm. Calculate (a) the area of the garden and (b) the circumference of the garden. Use π ≈ 3.14.	Area ≈ 78.5 cm²; Circumference ≈ 31.4 cm					
+1ca707a35c1a	circles	A circular garden has a radius of 5 cm. Calculate the area of the garden and the length of its outer edge (circumference). Use π ≈ 3.14 for any decimal answers.	Area = 25π cm² (≈ 78.5 cm²); Circumference = 10π cm (≈ 31.4 cm)					
+7675471339be	circles	Un círculo tiene un radio de 5 cm. Calcula (a) el área y (b) la circunferencia del círculo. Usa π ≈ 3.14.	a) Área ≈ 78.5 cm², b) Circunferencia ≈ 31.4 cm					
+f42ccdc7aa58	circles	一个圆形花园的半径是5米。请计算这个花园的周长和面积。使用π≈3.14进行计算。请用中文写出答案。	周长：约31.4米；面积：约78.5平方米					
+04db9e7fbd75	proportions	A recipe for a fruit smoothie uses 3 cups of orange juice to make 6 servings. How many cups of orange juice are needed to make 15 servings?	7.5 cups					
+04f3c9f82d55	circles	A circular garden has a radius of 5 cm. Find the area and the circumference of the garden. Use π ≈ 3.14.	Area = 78.5 cm², Circumference = 31.4 cm					
+ff2de5e934a6	percents	At the store, a backpack costs $25.00. The store is having a sale and is giving a 20% discount. After the discount, there is a 7% sales tax. How much will you pay in total for the backpack after the discount and tax?	$21.40					
+3d1f37980b49	two_step_eq	Solve the equation: 3x + 5 = 20	5					
+f7e6a584031c	percents	A shirt costs $25. It is on sale for 20% off. After the discount, a 5% sales tax is applied. What is the total cost of the shirt after the discount and tax?	$20.93					
+4e43068adf3a	proportions	A model of a new park is built at a scale of 1:250. If the model shows a walking path that is 3.6 cm long, how long is the actual walking path in meters?	9 meters					
+3ba89fb37432	percents	小明在商店看到一件原价为80元的运动衫。商店现在打8折出售。请问打折后的价格是多少元？	64元					
+21986462f40f	percents	A video game costs $45. It is on sale for 20% off. After the discount, a sales tax of 6% is added. How much does the game cost now? (Un juego cuesta $45. Tiene un descuento del 20%. Después del descuento, se agrega un impuesto del 6%. ¿Cuánto cuesta ahora?)	$38.16					
+736ab98fc4c4	circles	A circular garden has a radius of 5 meters. Calculate both the area and the circumference of the garden. Use π ≈ 3.14 for your calculations. Write your answers in meters (m) for circumference and square meters (m²) for area.	Area = 78.5 m², Circumference = 31.4 m					
+bd3d383e3b88	circles	A circular garden has a radius of 4 cm. Find both the area and the circumference of the garden. (If you need a reminder: Area = π × radius² and Circumference = 2 π × radius. Use π ≈ 3.14.)	Area ≈ 50.3 cm², Circumference ≈ 25.1 cm					
+8fa72da3af32	circles	A round table has a diameter of 2 meters. Calculate the area and the circumference of the table. (Use π ≈ 3.14)	Area: 3.14 square meters, Circumference: 6.28 meters					
+f59ce624495b	rationals	Calculate the value of the following expression and simplify your answer to its lowest terms: (-3/4 + 0.6) - (1.25 - (-7/10)). Show all steps.	-29/20 or -1.45					
+a393afb59e7b	circles	A circular garden has a radius of 7 cm. Find the area and the circumference of the garden. (Use π ≈ 3.14)	Area ≈ 154 cm²; Circumference ≈ 44 cm					
+6de2fea81bba	two_step_eq	Solve for x in the equation: 5(x + 3) - 2 = 23. Show all your work and write your answer in a complete sentence.	x = 2					
+7f8956695a1f	proportions	En una receta de postre, se necesitan 3 tazas de harina para hacer 24 galletas. Si quieres hacer 80 galletas, ¿cuántas tazas de harina necesitarás? Escribe tu respuesta en forma de fracción si es necesario.	10 tazas de harina					
+50e07f1ffd30	two_step_eq	Solve for x: 3x + 5 = 20.	5					
+bf78c1581bfc	proportions	En una receta para hacer galletas, se necesitan 2 tazas de harina para hacer 24 galletas. Si quieres hacer 60 galletas, ¿cuántas tazas de harina necesitarás? Escribe tu respuesta como un número entero o fracción en su forma más simple.	5 tazas					
+2fb192598b1a	two_step_eq	Solve for x: 3x - 5 = 16	7					
+5e5f41e76e14	two_step_eq	解方程：3x + 5 = 20。请先用英文写出方程的意义，再求出x的值。	x = 5					
+85df044da621	circles	A circle has a circumference of 22π cm. A second circle has a radius that is 2 cm longer than the radius of the first circle. The area of the second circle is 48π cm² greater than the area of the first circle. Find the radius of each circle.	First circle radius = 11 cm; second circle radius = 13 cm					
+216a16e3edfc	two_step_eq	Solve for x: 4x - 9 = 2x + 7	8					
+e575697bad0f	circles	María quiere decorar una mesa redonda con un mantel. El radio de la mesa es de 50 cm. ¿Cuál es el área de la mesa en cm²? Además, si María quiere poner una cinta alrededor del borde de la mesa, ¿cuánto medirá la cinta en cm? Usa π ≈ 3.14.	Área: 7,850 cm²; Circunferencia: 314 cm					
+dbb26dedb348	two_step_eq	Resuelve la ecuación: (2x + 5) / 3 = 7. Muestra todos tus pasos y escribe la respuesta final en forma de fracción simplificada si es necesario.	x = 8					
+43704f520b43	proportions	小明在超市看到一种新饮料，6瓶装的价格是48元。他需要购买这种饮料15瓶，如果继续以同样的比例购买，他需要支付多少元？请写出计算过程。	120元					
+d0db2243d6b4	percents	A jacket costs $45. The store gives a 20% discount. After the discount, a sales tax of 6% is added. How much do you pay for the jacket?	$38.16					
+c570d0413459	proportions	A recipe for 12 pancakes requires 2 cups of flour. How many cups of flour are needed to make 30 pancakes? Set up and solve a proportion to find the answer.	5 cups of flour					
+5af7eb4b9509	two_step_eq	解方程：3x + 5 = 14	x = 3					
+ea94fc29c209	circles	A circular garden has a radius of 5 cm. Find (a) the area of the garden and (b) the circumference of the garden. Use π ≈ 3.14.	Area = 78.5 cm²; Circumference = 31.4 cm					
+84b1c826b0fd	circles	Maria has a circular garden with a radius of 4 meters. She wants to put a fence around the garden. How long will the fence need to be to go all the way around the garden? (Use 3.14 for π.)	25.12 meters					
+1bbb7dd079d9	circles	A circle has a radius of 5 cm. Find the area of the circle and the circumference of the circle. (Use π ≈ 3.14 if you need a decimal answer.)	Area ≈ 78.5 cm², Circumference ≈ 31.4 cm					
+ea4ba080b903	rationals	Solve the following problem and simplify your answer: -3/4 + (-0.25) - (1/2).	-1.5 or -3/2					
+928ffa72cf1e	two_step_eq	"Solve for x: 5(2x − 3) − 4 = 3x + 7. (If you prefer Spanish, this is ""Resolver para x: 5(2x − 3) − 4 = 3x + 7."")"	26/7					
+9ee5685def87	two_step_eq	Solve for x: 3(2x - 4) + 5 = 2x + 13.	5					
+d5c54b9dd6ae	two_step_eq	Solve for x: 4(2x - 3) = 5x + 7.	19/3					
+a0cbe255004b	proportions	In a local bakery, the ratio of cookies to muffins sold on Monday was 5:2. If 120 muffins were sold, how many cookies were sold? Additionally, if the price of one cookie is $1.50, what was the total revenue from cookie sales that day?	300 cookies; $450 total revenue					
+bb7c73079987	percents	Carlos quiere comprar una camiseta que cuesta $20. La tienda tiene un descuento del 15% en todos los artículos. ¿Cuánto dinero ahorrará Carlos con el descuento? ¿Cuál es el precio final de la camiseta después del descuento?	Carlos ahorrará $3. El precio final de la camiseta es $17.					

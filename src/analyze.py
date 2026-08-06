@@ -24,7 +24,7 @@ JUDGE_DIMS = ["correctness", "difficulty_alignment", "clarity",
 
 def load():
     df = pd.read_csv("data/metrics.csv")
-    # 2026-04-07 amendment (DESIGN.md §6b): gemini dropped from confirmatory analysis (28/540 collected)
+    # 2026-07-07 amendment (DESIGN.md §6b): gemini dropped from confirmatory analysis (28/540 collected)
     df = df[df.model_family != "gemini"]
     if os.path.exists("data/judgments.jsonl"):
         j = []
