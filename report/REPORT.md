@@ -126,7 +126,7 @@ A cross-family AI judge (Section 3.7) also scored each problem from 1 to 5 on fi
 
 ### 3.6 AI tool use disclosure
 
-This research used large language models (Claude 3.5 Sonnet and Claude 3 Opus via Anthropic API) to assist with manuscript drafting, statistical code review, and visualization generation. Specifically:
+This research used large language models (Claude 4.5 Sonnet and Claude 4 Opus via Anthropic API) to assist with manuscript drafting, statistical code review, and visualization generation. Specifically:
 
 - Initial manuscript structure and prose composition (Claude Sonnet, July 2026)
 - Verification of regression code and interpretation of statistical results (Claude Opus)  
