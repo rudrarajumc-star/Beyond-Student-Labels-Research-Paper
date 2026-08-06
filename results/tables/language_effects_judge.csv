@@ -1,0 +1,37 @@
+outcome,term,coef,p,ci_lo,ci_hi,n,p_holm
+clarity,"C(language, Treatment('control'))[T.ell_mandarin]",-0.12296502654040646,0.0011362365701489722,-0.1970202900714047,-0.04890976300940822,1566,0.040904516525363
+difficulty_alignment,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_mandarin]",0.21693253795042347,0.0016469920458808776,0.08184557364387696,0.35201950225697,1567,0.057644721605830715
+clarity,"C(language, Treatment('control'))[T.ell_spanish]",-0.12982494672424225,0.003828842666963244,-0.2178119635930897,-0.04183792985539478,1566,0.1301806506767503
+correctness,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_mandarin]",0.586815495301843,0.014738414682750571,0.11520496639605421,1.0584260242076318,1567,0.48636768453076884
+difficulty_alignment,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_spanish]",0.15077232026163045,0.027733590684772876,0.01651348203215805,0.28503115849110283,1567,0.887474901912732
+correctness,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_spanish]",0.48169192682399853,0.037994141945881965,0.026686542762190513,0.9366973108858065,1567,1.0
+pedagogical_soundness,"C(language, Treatment('control'))[T.ell_spanish]",-0.03821876241778418,0.05023914807332727,-0.07647738152436628,3.9856688797926254e-05,1567,1.0
+pedagogical_soundness,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.multilingual]",0.034069489097007404,0.08745044064486446,-0.0050029885335138025,0.07314196672752861,1567,1.0
+correctness,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.multilingual]",0.41922368529226,0.08766620000535259,-0.06188915489804214,0.9003365254825622,1567,1.0
+clarity,"C(language, Treatment('control'))[T.multilingual]",-0.0353566844780779,0.09380872255196496,-0.07671271970320045,0.005999350747044649,1566,1.0
+correctness,"C(language, Treatment('control'))[T.ell_spanish]",0.24060367696622253,0.09795662202490983,-0.04436288774603803,0.5255702416784831,1567,1.0
+clarity,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_mandarin]",0.09502460467425806,0.15342032261291028,-0.03543969006404475,0.2254888994125609,1566,1.0
+difficulty_alignment,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.multilingual]",0.07002767435605758,0.15686704842797705,-0.026922909117514188,0.16697825782962936,1567,1.0
+clarity,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_spanish]",0.09855426935299584,0.18109133400329736,-0.04587707307591733,0.24298561178190903,1566,1.0
+difficulty_alignment,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.multilingual]",0.08686364819624491,0.23482478704402676,-0.05644147435052645,0.23016877074301628,1567,1.0
+pedagogical_soundness,"C(language, Treatment('control'))[T.multilingual]",-0.008835601744661314,0.2820093541347455,-0.024932642473890997,0.00726143898456837,1567,1.0
+clarity,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.multilingual]",-0.04444712129755534,0.2824583524979478,-0.12549818570043247,0.036603943105321786,1566,1.0
+difficulty_alignment,"C(language, Treatment('control'))[T.ell_spanish]",0.03688979696068419,0.28657401556253526,-0.030957519069151243,0.10473711299051962,1567,1.0
+pedagogical_soundness,"C(language, Treatment('control'))[T.ell_mandarin]",-0.007767486636039089,0.3380450961173703,-0.023658339915556905,0.008123366643478725,1567,1.0
+correctness,"C(language, Treatment('control'))[T.multilingual]",-0.13804957668625725,0.3765339071996532,-0.4440226427599583,0.16792348938744375,1567,1.0
+correctness,"C(language, Treatment('control'))[T.ell_mandarin]",0.11083241285637484,0.4574883448626883,-0.1815373796625766,0.4032022053753263,1567,1.0
+pedagogical_soundness,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_spanish]",0.025364271949377147,0.46291038132495077,-0.04235888509358975,0.09308742899234404,1567,1.0
+clarity,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.multilingual]",0.04052392817465994,0.47005638514277515,-0.06942462484739091,0.1504724811967108,1566,1.0
+correctness,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_spanish]",-0.1286045192472792,0.5312914301091822,-0.5312335823950477,0.27402454390048936,1567,1.0
+pedagogical_soundness,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.multilingual]",-0.012782907800889375,0.5389265235460414,-0.05355850346937516,0.02799268786759641,1567,1.0
+pedagogical_soundness,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_mandarin]",0.007961513663962486,0.5611876818014152,-0.0188924920621746,0.03481551939009957,1567,1.0
+clarity,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_spanish]",0.03301107038586605,0.5826535445106389,-0.08473050446181446,0.15075264523354656,1566,1.0
+correctness,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.multilingual]",0.11449491303021543,0.5994178824557583,-0.31275137600518027,0.5417412020656112,1567,1.0
+difficulty_alignment,"C(language, Treatment('control'))[T.ell_mandarin]",0.014960410887047878,0.6816318599296167,-0.05651496308973992,0.08643578486383567,1567,1.0
+pedagogical_soundness,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_mandarin]",0.009251344465386077,0.6985782568705514,-0.0375730643099818,0.05607575324075396,1567,1.0
+clarity,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_mandarin]",0.016772701962694318,0.7330485780235959,-0.07961102098387794,0.11315642490926657,1566,1.0
+difficulty_alignment,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_mandarin]",0.014789718455617898,0.7766004664051012,-0.08736751330733714,0.11694695021857293,1567,1.0
+pedagogical_soundness,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_spanish]",0.008547011809316352,0.7785815766928379,-0.05103244817310259,0.0681264717917353,1567,1.0
+difficulty_alignment,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_spanish]",-0.013187055446195797,0.800312842270668,-0.1153690912111274,0.08899498031873582,1567,1.0
+difficulty_alignment,"C(language, Treatment('control'))[T.multilingual]",0.006208360094024413,0.867541529174046,-0.06675009626600169,0.0791668164540505,1567,1.0
+correctness,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_mandarin]",-0.01110879767672874,0.958402140653186,-0.42854234039529765,0.4063247450418402,1567,0.958402140653186

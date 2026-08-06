@@ -1,0 +1,5 @@
+language,n_solution_steps,n_operations,max_operand_magnitude,fk_grade,mean_sentence_len,rare_word_ratio,word_count
+control,5.07,17.93,67.55,4.64,8.13,0.03,24.81
+multilingual,5.0,16.38,67.4,4.25,8.03,0.03,29.58
+ell_spanish,4.57,15.44,47.06,4.22,7.85,0.06,28.92
+ell_mandarin,4.46,13.88,56.82,3.91,7.2,0.04,20.98

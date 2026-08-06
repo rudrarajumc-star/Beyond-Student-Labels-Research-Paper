@@ -1,0 +1,37 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Audit backups (local working copies, not part of the record)
+_audit_backup_*/
+
+# Build archives
+arxiv_submission.zip
+
+# Local convenience launchers (not part of the research deliverable)
+*.command
+
+# Personal working files not meant for the public repo
+Sample_Problems_for_Prof_Parameswari.html
+
+# Pre-writing scaffold, superseded by report/REPORT.md
+report/REPORT_TEMPLATE.md
+
+# Orphaned build file, unused by the current PDF pipeline (arxiv/preamble.tex)
+report/_header.tex
+
+# Duplicate/debug copies superseded by the documented files (see README)
+data/judge_validation_batchselftest.csv
+data/RATING_SHEET_batch2_paste_into_sheets.tsv
+data/RATING_SHEET_paste_into_sheets.tsv
+
+# Environment
+.env
+__pycache__/
+*.pyc
+.DS_Store

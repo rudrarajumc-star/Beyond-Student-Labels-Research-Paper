@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this study, its data, or its code, please cite it as below."
+title: "Beyond Student Labels: Evaluating Prompt Sensitivity in AI-Generated Practice Problems for Multilingual Learners"
+abstract: >-
+  A pre-registered factorial audit of whether large language models change the
+  mathematical difficulty (harmful) or only the linguistic complexity (appropriate)
+  of AI-generated practice problems when a student is labeled an English language
+  learner. Across 1,620 generations from three free, open-weight model families,
+  the primary result is a null on math difficulty with significant simplification
+  of language, plus unprompted first-language switching, label-conditioned name
+  choice, and an LLM-judge cultural blind spot.
+type: software
+authors:
+  - family-names: Rudraraju
+    given-names: Satyanarayana
+    email: rudrarajumc@gmail.com
+    affiliation: "Whitney M. Young Magnet High School, Chicago, IL, USA"
+keywords:
+  - large language models
+  - algorithmic fairness
+  - multilingual learners
+  - educational technology
+  - prompt sensitivity
+  - LLM-as-judge
+  - pre-registration
+version: "1.2"
+date-released: "2026-08-06"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21824157
+    description: "Permanent archived version of this repository (v1.2)"
+license: MIT

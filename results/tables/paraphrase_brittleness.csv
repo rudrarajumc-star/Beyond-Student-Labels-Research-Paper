@@ -1,0 +1,10 @@
+outcome,paraphrase,ell_gap_d
+n_solution_steps,A,-0.28689659195033035
+n_solution_steps,B,-0.23306273973109612
+n_solution_steps,C,-0.20010898983561767
+n_operations,A,-0.18171856709928325
+n_operations,B,-0.2662382815836732
+n_operations,C,-0.15466745181855673
+max_operand_magnitude,A,-0.17931427774028796
+max_operand_magnitude,B,-0.10806611595778054
+max_operand_magnitude,C,-0.022883826934405854

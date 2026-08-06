@@ -1,0 +1,28 @@
+outcome,term,coef,p,ci_lo,ci_hi,n,p_holm
+fk_grade,"C(language, Treatment('control'))[T.multilingual]",-0.8870920631704158,0.00026409690158155595,-1.3636762589740068,-0.41050786736682476,1121,0.007130616342702011
+fk_grade,"C(language, Treatment('control'))[T.ell_mandarin]",-0.918352084199463,0.000461978176043293,-1.4323429129135037,-0.40436125548542223,1121,0.012011432577125617
+rare_word_ratio,"C(language, Treatment('control'))[T.ell_mandarin]",0.019698880740761596,0.0016615665648374773,0.007422058327661164,0.03197570315386203,1121,0.04153916412093693
+fk_grade,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_spanish]",1.3923448139820376,0.001740654987692459,0.5208244889860041,2.263865138978071,1121,0.04177571970461902
+rare_word_ratio,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_spanish]",0.05523691325258712,0.009313547179245953,0.013602750228083757,0.09687107627709049,1121,0.21421158512265692
+fk_grade,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_mandarin]",0.9254319025263247,0.015115378603849648,0.1788846829674109,1.6719791220852385,1121,0.33253832928469224
+mean_sentence_len,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_mandarin]",-1.4160751363187427,0.0190752245464158,-2.6001144065611443,-0.2320358660763413,1496,0.4005797154747318
+fk_grade,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.multilingual]",0.7657920855438685,0.03420046351673144,0.05703978566426915,1.4745443854234677,1121,0.6840092703346289
+fk_grade,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.multilingual]",0.8379407328700799,0.03830717675749922,0.04513750213162304,1.6307439636085368,1121,0.7278363583924852
+rare_word_ratio,"C(language, Treatment('control'))[T.ell_spanish]",0.02010981430131992,0.0618183848883818,-0.0009945941545346677,0.04121422275717451,1121,1.0
+rare_word_ratio,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_mandarin]",-0.016688125009572754,0.07133552065419947,-0.03482569380062164,0.001449443781476132,1121,1.0
+mean_sentence_len,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.multilingual]",0.7593235039428206,0.07317119790103663,-0.0712819206333054,1.5899289285189466,1496,1.0
+fk_grade,"C(language, Treatment('control'))[T.ell_spanish]",-0.5494248528008628,0.08623761414910931,-1.1771125003359546,0.07826279473422892,1121,1.0
+mean_sentence_len,"C(language, Treatment('control'))[T.ell_mandarin]",-0.5482358320023645,0.10806305215009576,-1.2169035081209296,0.12043184411620067,1496,1.0
+mean_sentence_len,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_mandarin]",0.5976742816369963,0.24297969754998316,-0.40562203063379665,1.6009705939077894,1496,1.0
+mean_sentence_len,"C(language, Treatment('control'))[T.multilingual]",-0.3201291415485382,0.2771674643880596,-0.8975093214978956,0.2572510384008192,1496,1.0
+mean_sentence_len,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_spanish]",0.3549020493409727,0.4255481978146447,-0.5180481067697643,1.2278522054517098,1496,1.0
+mean_sentence_len,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_spanish]",-0.46500631704595907,0.4318608528594716,-1.6245260413948415,0.6945134073029233,1496,1.0
+rare_word_ratio,"C(language, Treatment('control'))[T.multilingual]",0.004033451718066459,0.5143374399767258,-0.008089588740065545,0.016156492176198464,1121,1.0
+mean_sentence_len,"C(language, Treatment('control'))[T.ell_spanish]",-0.20927227907419865,0.524498707062248,-0.8537557525669937,0.43521119441859635,1496,1.0
+rare_word_ratio,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_spanish]",-0.005583561503517755,0.6792709779372426,-0.03205197057062153,0.02088484756358602,1121,1.0
+fk_grade,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_spanish]",-0.21002857061812952,0.6852396624964365,-1.2256329810381679,0.8055758398019088,1121,1.0
+rare_word_ratio,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.multilingual]",0.003126250561567834,0.7304632642767086,-0.014659445168308954,0.020911946291444623,1121,1.0
+mean_sentence_len,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.multilingual]",-0.16363202623379727,0.7798109959457421,-1.3108159703977114,0.9835519179301168,1496,1.0
+fk_grade,"C(level, Treatment('on_grade'))[T.advanced]:C(language, Treatment('control'))[T.ell_mandarin]",-0.11466853388969599,0.8009782016719882,-1.006230784250709,0.7768937164713171,1121,1.0
+rare_word_ratio,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.multilingual]",0.0021923260532671447,0.8102006955788942,-0.015698882174434936,0.020083534280969227,1121,1.0
+rare_word_ratio,"C(level, Treatment('on_grade'))[T.struggling]:C(language, Treatment('control'))[T.ell_mandarin]",-0.0015352795303778739,0.8735228096269163,-0.020438348942265656,0.01736778988150991,1121,0.8735228096269163
