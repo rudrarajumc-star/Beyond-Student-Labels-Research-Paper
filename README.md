@@ -3,10 +3,13 @@
 **Evaluating Prompt Sensitivity in AI-Generated Practice Problems for Multilingual Learners**
 
 *Satyanarayana ("Rudra") Rudraraju · Whitney M. Young Magnet High School, Chicago*
-Preprint v1.1 (17 July 2026) · Pre-registered · MIT (code) / CC BY 4.0 (text & figures)
+Preprint v1.2 (6 August 2026) · Pre-registered · MIT (code) / CC BY 4.0 (text & figures)
 
 📄 **Read the paper:** [`report/REPORT.md`](report/REPORT.md)
 🧾 **Pre-registration (read this first):** [`DESIGN.md`](DESIGN.md)
+📊 **Data dictionary:** [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) · **Every claim traced to its evidence:** [`RESULTS_MAP.md`](RESULTS_MAP.md)
+
+**Status:** Posted to arXiv and OSF Preprints (6 August 2026). Submitted to *Education Sciences* (MDPI).
 
 ---
 
@@ -42,6 +45,26 @@ Mistral Small):
 
 The primary finding is a **null**, framed as informative. See the paper for the full,
 unsoftened treatment of limitations (including a compressed "struggling" difficulty floor).
+
+The null survives four independent robustness checks: de-duplication of near-identical
+outputs, standard errors clustered on the 539 design cells, restriction to English-only
+outputs, and separate estimation across all three prompt paraphrases.
+
+## Verification status
+
+Every number in the paper was independently recomputed from the raw data in a July 2026
+audit; all reproduced. The audit also corrected four things, each disclosed in the paper:
+a mis-stated judge coefficient (−1.48 → −1.47), a word-count column corrupted by
+unsegmented Chinese text, a citation with the wrong journal, and — most importantly — the
+pre-registration's **overstated power claim** (`DESIGN.md` §5 says "power > .9 for d = 0.3
+within model"; the true within-model figure is **0.67**, with 80% power only at d ≈ 0.35).
+`DESIGN.md` was deliberately left unedited, because a pre-registration should never be
+retroactively rewritten; the paper corrects it openly in §3.2 instead.
+
+**Known reproducibility limits:** `mistral-small-latest` is a floating provider alias, so
+the exact served weights cannot be reconstructed; `data/generations.jsonl` carries no
+per-generation timestamps; and the registration date rests on this repository alone,
+with no external timestamp.
 
 ## Pipeline
 
@@ -141,6 +164,15 @@ only 29 usable items of 540). Details in `DESIGN.md` §6b, `config.json`, and th
 No human-subjects data: all "students" are prompt personas; the only human ratings are the
 author's own blinded scores. Committed data (`data/`, `results/`) contains model output only,
 no personal information. See the paper's Ethics Statement.
+
+## AI-assistance disclosure
+
+The models under study generated all 1,620 practice problems and served as cross-family
+judges — that is the object of the research. Separately, large language models were used to
+assist in drafting the manuscript and in writing and verifying analysis code. The design,
+hypotheses, data collection, human ratings, and all final claims are the author's own; every
+reported number was verified against the raw data, and the author takes full responsibility
+for the content. See the paper's Author Contributions section.
 
 ## Citation
 
