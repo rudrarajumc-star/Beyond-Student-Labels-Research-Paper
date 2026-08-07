@@ -9,7 +9,7 @@ Preprint v1.3 (7 August 2026) · Pre-registered · MIT (code) / CC BY 4.0 (text 
 🧾 **Pre-registration (read this first):** [`DESIGN.md`](DESIGN.md)
 📊 **Data dictionary:** [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) · **Every claim traced to its evidence:** [`RESULTS_MAP.md`](RESULTS_MAP.md)
 
-**Status:** Posted to arXiv and OSF Preprints (6 August 2026). Not yet submitted to a journal.
+**Status:** Archived on Zenodo (6 August 2026). Not yet posted to arXiv or OSF Preprints. Short-paper version submitted to SIMBig 2026 (7 August 2026).
 
 🔖 **Permanent archive (DOI):** [10.5281/zenodo.21824157](https://doi.org/10.5281/zenodo.21824157)
 
