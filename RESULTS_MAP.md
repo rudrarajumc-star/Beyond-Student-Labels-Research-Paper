@@ -1,4 +1,4 @@
-# Results Map — every claim in the paper traced to its evidence
+# Results Map - every claim in the paper traced to its evidence
 
 Each row: what the paper says → the data it comes from → the code that produced it → the output file. Every number below was **independently recomputed** during the July 2026 audit and matched unless noted.
 
@@ -17,7 +17,7 @@ Each row: what the paper says → the data it comes from → the code that produ
 | **§4.3 (H3)** | FK −0.887 multilingual (Holm .0071), −0.918 ell_mandarin (.0120); ell_spanish −0.55 n.s. | `metrics.csv` English-only (n=1,121) | `analyze.py: regressions()` | `tables/language_effects_linguistic.csv` | ✔ reproduced exactly |
 | §4.3 | rare-word ell_mandarin +0.0197 (Holm .0415) | same | same | same | ✔ reproduced |
 | §4.3 | struggling×ell_spanish FK +1.39 (Holm .0418) | same | same | same | ✔ reproduced |
-| **§4.4** | De-dup: 107 removed → 1,460; null holds (smallest Holm p=0.70); llama d −0.42→−0.50 | `metrics.csv` | audit de-dup script | `tables/language_effects_math_dedup.csv` | ✔ reproduced (106 vs 107 — off-by-one from ≥90% vs >90% threshold; immaterial) |
+| **§4.4** | De-dup: 107 removed → 1,460; null holds (smallest Holm p=0.70); llama d −0.42→−0.50 | `metrics.csv` | audit de-dup script | `tables/language_effects_math_dedup.csv` | ✔ reproduced (106 vs 107, off-by-one from ≥90% vs >90% threshold; immaterial) |
 | **§4.4** | Cell-clustered SEs (539 cells): smallest p .07→.11 | `metrics.csv` | audit reanalysis | in text | ✔ new robustness check added by audit |
 | **§4.4** | English-only H2 (n=1,121): null holds, smallest p=.12 | `metrics.csv` | audit reanalysis | in text | ✔ new robustness check added by audit |
 | **Table 5 (H4)** | ELL-vs-control gap by paraphrase | `metrics.csv` | `analyze.py: paraphrase_brittleness()` | `tables/paraphrase_brittleness.csv` | ✔ reproduced |
@@ -28,15 +28,15 @@ Each row: what the paper says → the data it comes from → the code that produ
 | **§4.8** | Parse failure llama 8.1% / mistral 1.5% / gptoss 0.2% | `metrics.csv` | audit recount | in text | ✔ reproduced exactly |
 | §4.8 | Duplication 8.1% overall; llama 19.3%, mistral 4.2%, gptoss 2.4% | `metrics.csv` | audit recount | in text | ✔ reproduced exactly (124/1,523 within-cell pairs of readable items, `problem_text` similarity ≥ 0.90; stable across ≥/> and whitespace-normalisation variants). Corrected 2026-08-06 from earlier 18.9%/4.6%, which did not reproduce under any tested definition. |
 | §5 | $20.93 item: human scored 5/5, judge scored 1/5 | `human_ratings_batch1_scored.csv`, `judgments.jsonl` | direct lookup (`f7e6a584031c`) | in text | ✔ Discussion previously said it "passed both"; corrected 2026-08-06 to match §4.9 and Appendix C |
-| §1 | Steele & Aronson (1995) stereotype-threat citation | — | citation balance check | in text | ✔ dropped during an Introduction rewrite, restored 2026-08-06; all 24 references now cited |
+| §1 | Steele & Aronson (1995) stereotype-threat citation | - | citation balance check | in text | ✔ dropped during an Introduction rewrite, restored 2026-08-06; all 24 references now cited |
 | **Table 8** | Judge means by condition | `judgments.jsonl` | groupby | `tables/judge_means_by_condition.csv` | ✔ reproduced from raw JSONL |
 | **§4.9** | Judge validity ρ=0.70, 98% exact/within-1, n=56 | `judge_validation_batch1.csv` | `validate_judge.py` | same | ✔ reproduced |
 | Appendix C | 4 worked examples (IDs, answers, judge scores) | `metrics.csv`, `judgments.jsonl` | audit lookup | in text | ✔ all 4 IDs verified; arithmetic re-derived ($21.00, −2.1, 50.24/25.12, 64元) |
 | Appendix D | Gemini 138 raw / 29 parsed | `metrics.csv` | audit count | in text | ✔ reproduced (DESIGN.md's "28" corrected) |
 
 ## Independent answer verification (audit-only; not a paper claim)
-Symbolic solving of simple linear equations in English outputs: **2 of 57 stated answers wrong (3.5%)** — items `5a6e9b814d05` / `8bcac78c5934` (Llama), "2x+5=11−3x" answered 2 where the true root is 1.2. A strict no-tax percent-discount subset found **0 of 64** genuine model errors. Broader automated checks on percents and circles produced high apparent error rates that were traced to **the auditor's own parser**, not the models (missed "tax of X%" phrasing; radius/diameter confusion), and are therefore **not reported as findings**. Reliable evidence on answer correctness remains the judge's correctness scores and the 56-item human validation.
+Symbolic solving of simple linear equations in English outputs: **2 of 57 stated answers wrong (3.5%)** - items `5a6e9b814d05` / `8bcac78c5934` (Llama), "2x+5=11−3x" answered 2 where the true root is 1.2. A strict no-tax percent-discount subset found **0 of 64** genuine model errors. Broader automated checks on percents and circles produced high apparent error rates that were traced to **the auditor's own parser**, not the models (missed "tax of X%" phrasing; radius/diameter confusion), and are therefore **not reported as findings**. Reliable evidence on answer correctness remains the judge's correctness scores and the 56-item human validation.
 
 ## Not reproducible from the repo
-- **Registration date.** `DESIGN.md` asserts 2026-07-03 but no external timestamp, OSF record, or intact git history corroborates it, and `generations.jsonl` carries no per-row timestamps. Audit item **A002 — open**.
+- **Registration date.** `DESIGN.md` asserts 2026-07-03 but no external timestamp, OSF record, or intact git history corroborates it, and `generations.jsonl` carries no per-row timestamps. Audit item **A002, open**.
 - **Exact Mistral weights.** `mistral-small-latest` is a floating alias.

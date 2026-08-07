@@ -3,13 +3,13 @@
 **Evaluating Prompt Sensitivity in AI-Generated Practice Problems for Multilingual Learners**
 
 *Satyanarayana ("Rudra") Rudraraju · Whitney M. Young Magnet High School, Chicago*
-Preprint v1.2 (6 August 2026) · Pre-registered · MIT (code) / CC BY 4.0 (text & figures)
+Preprint v1.3 (7 August 2026) · Pre-registered · MIT (code) / CC BY 4.0 (text & figures)
 
 📄 **Read the paper:** [`report/REPORT.md`](report/REPORT.md)
 🧾 **Pre-registration (read this first):** [`DESIGN.md`](DESIGN.md)
 📊 **Data dictionary:** [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) · **Every claim traced to its evidence:** [`RESULTS_MAP.md`](RESULTS_MAP.md)
 
-**Status:** Posted to arXiv and OSF Preprints (6 August 2026). Submitted to *Education Sciences* (MDPI).
+**Status:** Posted to arXiv and OSF Preprints (6 August 2026). Not yet submitted to a journal.
 
 🔖 **Permanent archive (DOI):** [10.5281/zenodo.21824157](https://doi.org/10.5281/zenodo.21824157)
 
@@ -19,11 +19,11 @@ Preprint v1.2 (6 August 2026) · Pre-registered · MIT (code) / CC BY 4.0 (text 
 
 When you tell an AI tutor a student is an **English language learner (ELL)**, a fair model
 should make the *language* of a practice problem simpler while keeping the *math* just as hard.
-Making the math easier would repeat a documented harm from education research — treating a
+Making the math easier would repeat a documented harm from education research, treating a
 student's English level as if it were their math ability. This project audits whether that
 happens, in the free, open-weight models that low-budget edtech actually deploys.
 
-It studies problem **writing**, not problem **solving** — the behavior where a student label
+It studies problem **writing**, not problem **solving** - the behavior where a student label
 has the most room to change the content.
 
 ## Headline results
@@ -74,7 +74,7 @@ This audit **corrected two errors** now fixed in the paper:
    similarity-threshold and normalisation variants, are **Llama 19.3% / Mistral 4.2%**
    (GPT-OSS 2.4% and the 8.1% overall figure were already correct).
 2. **A Discussion sentence** stated that a wrong answer ($20.93 vs. $21.00) "passed both a
-   careful human rater and an AI judge." The raw data show the judge scored it 1/5 — the
+   careful human rater and an AI judge." The raw data show the judge scored it 1/5, the
    human missed it and the judge caught it. Corrected to match §4.9 and Appendix C.
 
 3. **A dropped citation.** Steele & Aronson (1995) was cut from the Introduction during a
@@ -89,9 +89,17 @@ The typeset PDF (`report/REPORT.pdf`, `arxiv/main.pdf`) was regenerated from the
 Markdown on 6 August 2026, and every number in it was re-extracted and re-checked against
 the raw data files programmatically.
 
+**Third check, 7 August 2026.** While preparing a condensed conference version, the
+de-duplication sentence in §4.4 and Appendix E was found to still read "*d* = −0.42 to
+−0.50", the *summary above this line has always said −0.51*, and recomputing the
+de-duplicated Cohen's *d* directly from `data/metrics.csv` confirms −0.51 is correct; the
+body text had not been updated to match. Fixed in both places. No conclusion changes.
+The version stamp (previously stuck at "Version 1.1, 17 July 2026" from before the
+6 August rewrite) is corrected to Version 1.3, 7 August 2026, matching this repository.
+
 An earlier July 2026 audit corrected four things, each disclosed in the paper:
 a mis-stated judge coefficient (−1.48 → −1.47), a word-count column corrupted by
-unsegmented Chinese text, a citation with the wrong journal, and — most importantly — the
+unsegmented Chinese text, a citation with the wrong journal, and, most importantly, the
 pre-registration's **overstated power claim** (`DESIGN.md` §5 says "power > .9 for d = 0.3
 within model"; the true within-model figure is **0.67**, with 80% power only at d ≈ 0.35).
 `DESIGN.md` was deliberately left unedited, because a pre-registration should never be
@@ -170,7 +178,7 @@ Llama family, which batch 1 did not. The blinded sheet is already generated
 # 1. (already done) generate the blinded sheet + key:
 python3 src/evaluate.py --sample --families llama --batch 2 --n 28
 
-# 2. Rate data/human_rating_sheet_batch2.csv by hand — fill the five 1-5 columns,
+# 2. Rate data/human_rating_sheet_batch2.csv by hand - fill the five 1-5 columns,
 #    WITHOUT opening the key. Save as data/human_ratings_batch2_scored.csv
 
 # 3. Compute batch-2 and pooled judge–human validity:
@@ -180,13 +188,13 @@ python3 src/validate_judge.py --pooled
 
 `validate_judge.py` reproduces the committed batch-1 table exactly, so the batch-2 and
 pooled numbers are directly comparable. Until batch 2 is rated, the paper reports the
-Llama family as human-unvalidated — an honest limitation, not a placeholder to be faked.
+Llama family as human-unvalidated, an honest limitation, not a placeholder to be faked.
 
 ## Rules of the run (integrity)
 
-- Do **not** change prompts, conditions, or metrics once generation starts (see `DESIGN.md` §7 —
+- Do **not** change prompts, conditions, or metrics once generation starts (see `DESIGN.md` §7, 
   nulls get reported too; no HARKing).
-- `generate.py` and `judge.py` are **resumable** — safe to interrupt and re-run.
+- `generate.py` and `judge.py` are **resumable** - safe to interrupt and re-run.
 - Free tiers rate-limit; the scripts pace themselves and back off on HTTP 429.
 
 ## Protocol amendments (all pre-hypothesis-testing, fully disclosed)
@@ -204,7 +212,7 @@ no personal information. See the paper's Ethics Statement.
 ## AI-assistance disclosure
 
 The models under study generated all 1,620 practice problems and served as cross-family
-judges — that is the object of the research. Separately, large language models were used to
+judges, that is the object of the research. Separately, large language models were used to
 assist in drafting the manuscript and in writing and verifying analysis code. The design,
 hypotheses, data collection, human ratings, and all final claims are the author's own; every
 reported number was verified against the raw data, and the author takes full responsibility
@@ -215,7 +223,7 @@ for the content. See the paper's Author Contributions section.
 See [`CITATION.cff`](CITATION.cff), or:
 
 > Rudraraju, S. (2026). *Beyond Student Labels: Evaluating Prompt Sensitivity in AI-Generated
-> Practice Problems for Multilingual Learners.* Preprint v1.2. Zenodo. https://doi.org/10.5281/zenodo.21824157
+> Practice Problems for Multilingual Learners.* Preprint v1.3. Zenodo. https://doi.org/10.5281/zenodo.21824157
 
 ## License
 
