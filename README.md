@@ -5,6 +5,8 @@
 *Satyanarayana ("Rudra") Rudraraju · Whitney M. Young Magnet High School, Chicago*
 Preprint v1.3 (7 August 2026) · Pre-registered · MIT (code) / CC BY 4.0 (text & figures)
 
+Accepted For SIMBIG 2026 oral presentation at SIMBig 2026 and will be published in the Springer CCIS Series.
+
 📄 **Read the paper:** [`report/REPORT.md`](report/REPORT.md)
 🧾 **Pre-registration (read this first):** [`DESIGN.md`](DESIGN.md)
 📊 **Data dictionary:** [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) · **Every claim traced to its evidence:** [`RESULTS_MAP.md`](RESULTS_MAP.md)
