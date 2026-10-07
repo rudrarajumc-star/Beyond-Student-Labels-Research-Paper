@@ -13,7 +13,7 @@ Every column in the committed data files, with meaning, type, range, and missing
 | `topic` | Math topic (factor) | categorical | `proportions`, `percents`, `two_step_eq`, `rationals`, `circles` | 0 | |
 | `model_family` | Generating model | categorical | `llama`, `gptoss`, `mistral`, `gemini` | 0 | `gemini` excluded from all confirmatory analysis (n=138 collected, 29 parsed) |
 | `rep` | Repetition index within cell | integer | 1–3 | 0 | Temperature 0.7 samples; **not fully independent** (see duplication, §4.8) |
-| `parse_status` | JSON parse outcome | categorical | `ok` (1,596), `no_json` (145), `bad_json` (17) | 0 | Pre-registered exclusion; analyses use `ok` only |
+| `parse_status` | JSON parse outcome | categorical | `ok` (1,596), `no_json` (145), `bad_json` (17) | 0 | Pre-specified exclusion; analyses use `ok` only |
 | `output_language` | Detected output language | categorical | 13 values incl. `en`, `es`, `zh-cn`, `zh-tw`, `ko`, `da`, … | 162 | `langdetect`; **noisy on short text** - bucket to en/es/zh/other. Missing where parse failed |
 | `fk_grade` | Flesch–Kincaid grade level | float | −3.01 to 16.53 | 611 | **English outputs only** (invalid otherwise). 68 items < 0 = formula floor on very short text |
 | `mean_sentence_len` | Mean words per sentence | float | 0.33 to 40.0 | 233 | |

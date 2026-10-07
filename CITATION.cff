@@ -2,13 +2,22 @@ cff-version: 1.2.0
 message: "If you use this study, its data, or its code, please cite it as below."
 title: "Beyond Student Labels: Evaluating Prompt Sensitivity in AI-Generated Practice Problems for Multilingual Learners"
 abstract: >-
-  A pre-registered factorial audit of whether large language models change the
-  mathematical difficulty (harmful) or only the linguistic complexity (appropriate)
-  of AI-generated practice problems when a student is labeled an English language
-  learner. Across 1,620 generations from three free, open-weight model families,
-  the primary result is a null on math difficulty with significant simplification
-  of language, plus unprompted first-language switching, label-conditioned name
-  choice, and an LLM-judge cultural blind spot.
+  A factorial audit of whether large language models change the mathematical
+  difficulty (harmful) or only the linguistic complexity (appropriate) of
+  AI-generated practice problems when a student is described as an English
+  language learner. Across 1,620 generations from three free, open-weight model
+  families, an ELL label with a named first language shortened the written
+  solution by about half a step (ELL-Mandarin -0.65 steps and -4.24 operations,
+  both Holm-corrected p < .001; ELL-Spanish -0.52 steps, corrected p = .007),
+  while an explicit statement that the student was struggling with the topic
+  moved the same measures by -0.01 (p = .91). A generic "multilingual" label was
+  null and passed an equivalence test. Models also switched language unprompted
+  (50.4% of ELL-Spanish problems returned in Spanish) and produced wrong answer
+  keys at rates differing sharply by family (0.4% to 38.5%). Three bounds are
+  reported in the paper: the measures are read from the model's own solution and
+  so index solution length rather than intrinsic difficulty, the effect shrinks
+  by half or more among problems whose answer key is correct, and the ELL-Spanish
+  effect cannot be separated from language switching.
 type: software
 authors:
   - family-names: Rudraraju
@@ -22,11 +31,22 @@ keywords:
   - educational technology
   - prompt sensitivity
   - LLM-as-judge
-  - pre-registration
-version: "1.3"
-date-released: "2026-08-07"
+version: "2.0"
+date-released: "2026-10-07"
+license: MIT
 identifiers:
   - type: doi
     value: 10.5281/zenodo.21824157
-    description: "Permanent archived version of this repository"
-license: MIT
+    description: Zenodo archive of the earlier preprint version
+preferred-citation:
+  type: conference-paper
+  title: "Beyond Student Labels: Evaluating Prompt Sensitivity in AI-Generated Practice Problems for Multilingual Learners"
+  authors:
+    - family-names: Rudraraju
+      given-names: Satyanarayana
+      affiliation: "Whitney M. Young Magnet High School, Chicago, IL, USA"
+  collection-title: "Proceedings of SIMBig 2026, Communications in Computer and Information Science"
+  publisher:
+    name: Springer
+  year: 2026
+  notes: "To appear."

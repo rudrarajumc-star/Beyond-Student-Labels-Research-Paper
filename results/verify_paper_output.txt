@@ -1,0 +1,95 @@
+Beyond Student Labels - verification of the camera-ready paper
+pandas 2.3.3 | numpy 2.2.6 | python 3.10.12
+
+Sections 3.1 and 4 - sample
+---------------------------
+  [PASS] generations                                  paper       1620   recomputed       1620
+  [PASS] readable JSON                                paper       1567   recomputed       1567
+  [PASS] readable %                                   paper       96.7   recomputed    96.7284
+  [PASS] parse failure x language, chi2               paper       3.34   recomputed     3.3355
+  [PASS] parse failure x language, p                  paper       0.34   recomputed     0.3427
+  [PASS] Gemini requests answered                     paper        138   recomputed        138
+  [PASS] Gemini parsed                                paper         29   recomputed         29
+
+Section 4.1 - H1 manipulation check (advanced vs on-level)
+----------------------------------------------------------
+  [PASS] advanced -> solution steps                   paper       1.19   recomputed     1.1932
+  [PASS] advanced -> solution steps, p                paper    < 0.001   recomputed    0.00000
+  [PASS] advanced -> operations                       paper       7.04   recomputed     7.0438
+  [PASS] advanced -> operations, p                    paper    < 0.001   recomputed    0.00000
+  [PASS] advanced -> largest number                   paper        115   recomputed   114.9909
+  [PASS] advanced -> largest number, p                paper    < 0.001   recomputed    0.00000
+  [PASS] struggling -> steps, p                       paper       0.91   recomputed     0.9145
+  [PASS] struggling -> operations, p                  paper       0.61   recomputed     0.6086
+  [PASS] struggling -> largest number, p              paper       0.63   recomputed     0.6335
+
+Table 1 - ability label vs language labels, uncorrected
+-------------------------------------------------------
+  [PASS] struggling -> steps                          paper      -0.01   recomputed    -0.0129
+  [PASS] struggling -> operations                     paper       0.34   recomputed     0.3362
+  [PASS] struggling -> log10(largest)                 paper       0.01   recomputed     0.0088
+  [PASS] ell_spanish -> steps                         paper      -0.52   recomputed     -0.524
+  [PASS] ell_spanish -> steps, p                      paper      0.001   recomputed      0.001
+  [PASS] ell_spanish -> operations                    paper      -2.61   recomputed    -2.6123
+  [PASS] ell_spanish -> operations, p                 paper     0.0099   recomputed     0.0099
+  [PASS] ell_spanish -> log10(largest)                paper       -0.1   recomputed    -0.0957
+  [PASS] ell_spanish -> log10(largest), p             paper     0.0011   recomputed     0.0011
+  [PASS] ell_mandarin -> steps                        paper      -0.65   recomputed    -0.6509
+  [PASS] ell_mandarin -> steps, p                     paper   < 0.0001   recomputed    0.00003
+  [PASS] ell_mandarin -> operations                   paper      -4.24   recomputed    -4.2401
+  [PASS] ell_mandarin -> operations, p                paper   < 0.0001   recomputed    0.00001
+  [PASS] ell_mandarin -> log10(largest)               paper      -0.08   recomputed    -0.0832
+  [PASS] ell_mandarin -> log10(largest), p            paper     0.0075   recomputed     0.0075
+
+Section 4.2 - H2, Holm-corrected over the nine primary tests
+------------------------------------------------------------
+  [PASS] ELL-Mandarin -> steps                        paper      -0.65   recomputed    -0.6509
+  [PASS] ELL-Mandarin -> steps, CI low                paper      -0.96   recomputed    -0.9552
+  [PASS] ELL-Mandarin -> steps, CI high               paper      -0.35   recomputed    -0.3466
+  [PASS] ELL-Mandarin -> steps, Cohen's d             paper      -0.26   recomputed    -0.2562
+  [PASS] ELL-Mandarin -> steps, Holm p                paper     0.0002   recomputed     0.0002
+  [PASS] ELL-Mandarin -> operations                   paper      -4.24   recomputed    -4.2401
+  [PASS] ELL-Mandarin -> operations, CI low           paper      -6.15   recomputed    -6.1529
+  [PASS] ELL-Mandarin -> operations, CI high          paper      -2.33   recomputed    -2.3273
+  [PASS] ELL-Mandarin -> operations, Cohen's d        paper      -0.26   recomputed    -0.2565
+  [PASS] ELL-Mandarin -> operations, Holm p           paper     0.0001   recomputed     0.0001
+  [PASS] ELL-Spanish -> steps                         paper      -0.52   recomputed     -0.524
+  [PASS] ELL-Spanish -> steps, CI low                 paper      -0.84   recomputed    -0.8351
+  [PASS] ELL-Spanish -> steps, CI high                paper      -0.21   recomputed    -0.2129
+  [PASS] ELL-Spanish -> steps, Cohen's d              paper      -0.21   recomputed    -0.2062
+  [PASS] ELL-Spanish -> steps, Holm p                 paper     0.0067   recomputed     0.0067
+  [PASS] ELL-Spanish -> operations, Holm p            paper      0.059   recomputed     0.0594
+  [PASS] multilingual -> steps                        paper      -0.08   recomputed    -0.0757
+  [PASS] multilingual -> steps, p                     paper       0.68   recomputed     0.6764
+  [PASS] largest number (raw), smallest p             paper      > .16   recomputed     0.1646
+  [PASS] multilingual -> log10(largest), p            paper      0.018   recomputed     0.0176
+
+Section 4.5 - robustness: standard errors clustered on design cells
+-------------------------------------------------------------------
+  [PASS] number of design cells                       paper        539   recomputed        539
+  [PASS] clustered, Mandarin -> steps                 paper     0.0011   recomputed     0.0011
+  [PASS] clustered, Mandarin -> operations            paper     0.0003   recomputed     0.0003
+  [PASS] clustered, Spanish -> steps                  paper      0.028   recomputed     0.0284
+  [PASS] clustered, Spanish -> operations             paper      0.075   recomputed     0.0754
+
+Section 4.7 - answer keys flagged by the cross-family judge
+-----------------------------------------------------------
+  [PASS] wrong key, overall %                         paper       22.1   recomputed    22.1442
+  [PASS] wrong key, llama %                           paper       38.5   recomputed    38.5081
+  [PASS] wrong key, mistral %                         paper       28.9   recomputed    28.9474
+  [PASS] wrong key, gptoss %                          paper        0.4   recomputed     0.3711
+  [PASS] wrong key, control %                         paper       25.8   recomputed    25.7732
+  [PASS] wrong key, ell_mandarin %                    paper       18.8   recomputed    18.7661
+  [PASS] wrong key, ell_spanish %                     paper       18.5   recomputed     18.481
+
+Section 5 - the correct-key subset (the paper's largest caveat)
+---------------------------------------------------------------
+  [PASS] problems whose key the judge accepted        paper       1220   recomputed       1220
+  [PASS] correct keys only, Mandarin -> steps         paper      -0.33   recomputed    -0.3336
+  [PASS] correct keys only, Mandarin -> steps, p      paper      0.008   recomputed     0.0083
+  [PASS] correct keys only, Spanish -> steps          paper      -0.19   recomputed    -0.1877
+  [PASS] correct keys only, Spanish -> steps, p       paper       0.16   recomputed     0.1573
+
+==============================================================================
+ALL CHECKS PASSED - every headline number in the camera-ready paper
+reproduces from the raw data in data/.

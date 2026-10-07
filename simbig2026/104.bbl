@@ -1,0 +1,57 @@
+\begin{thebibliography}{27}
+
+\bibitem{abedi2001} Abedi, J., Lord, C.: The language factor in mathematics tests. Appl. Meas. Educ. 14(3), 219--234 (2001). doi: 10.1207/S15324818AME1403\_2
+
+\bibitem{azime2026} Azime, I.A., Belay, T.D., Klakow, D., Slusallek, P., Chhabra, A.: Bridging the culture gap: A framework for LLM-driven socio-cultural localization of math word problems in low-resource languages. In: Findings of ACL 2026. pp. 855--870 (2026). doi: 10.18653/v1/2026.findings-acl.42
+
+\bibitem{blodgett2020} Blodgett, S.L., Barocas, S., Daum\'e III, H., Wallach, H.: Language (technology) is power: A critical survey of ``bias'' in NLP. In: Proceedings of ACL 2020. pp. 5454--5476 (2020). doi: 10.18653/v1/2020.acl-main.485
+
+\bibitem{christ2024} Christ, B.R., Kropko, J., Hartvigsen, T.: MATHWELL: Generating educational math word problems using teacher annotations. In: Findings of EMNLP 2024. pp. 11914--11938 (2024). doi: 10.18653/v1/2024.findings-emnlp.696
+
+\bibitem{cobbe2021} Cobbe, K., Kosaraju, V., Bavarian, M., et al.: Training verifiers to solve math word problems. arXiv:2110.14168 (2021)
+
+\bibitem{cohen1988} Cohen, J.: Statistical Power Analysis for the Behavioral Sciences. 2nd edn. Lawrence Erlbaum Associates (1988)
+
+\bibitem{deshpande2023} Deshpande, A., Murahari, V., Rajpurohit, T., Kalyan, A., Narasimhan, K.: Toxicity in ChatGPT: Analyzing persona-assigned language models. In: Findings of EMNLP 2023. pp. 1236--1270 (2023). doi: 10.18653/v1/2023.findings-emnlp.88
+
+\bibitem{gallegos2024} Gallegos, I.O., Rossi, R.A., Barrow, J., et al.: Bias and fairness in large language models: A survey. Comput. Linguist. 50(3), 1097--1179 (2024). doi: 10.1162/coli\_a\_00524
+
+\bibitem{gamage2025} Gamage, O., Ranathunga, S., Lee, A., et al.: A multilingual dataset (MultiMWP) and benchmark for math word problem generation. IEEE Trans. Audio Speech Lang. Process. (2025). doi: 10.1109/TASLPRO.2025.3552936
+
+\bibitem{gupta2023} Gupta, S., Shrivastava, V., Deshpande, A., et al.: Bias runs deep: Implicit reasoning biases in persona-assigned LLMs. In: ICLR 2024 (2024)
+
+\bibitem{holm1979} Holm, S.: A simple sequentially rejective multiple test procedure. Scand. J. Stat. 6(2), 65--70 (1979)
+
+\bibitem{kantharuban2025} Kantharuban, A., Milbauer, J., Sap, M., Strubell, E., Neubig, G.: Stereotype or personalization? User identity biases chatbot recommendations. In: Findings of ACL 2025. pp. 24418--24436 (2025). doi: 10.18653/v1/2025.findings-acl.1254
+
+\bibitem{kasneci2023} Kasneci, E., Sessler, K., K\"uchemann, S., et al.: ChatGPT for good? On opportunities and challenges of large language models for education. Learn. Individ. Differ. 103, 102274 (2023). doi: 10.1016/j.lindif.2023.102274
+
+\bibitem{kincaid1975} Kincaid, J.P., Fishburne, R.P., Rogers, R.L., Chissom, B.S.: Derivation of New Readability Formulas for Navy Enlisted Personnel. Research Branch Report 8-75, Naval Technical Training Command (1975)
+
+\bibitem{mackinnon1985} MacKinnon, J.G., White, H.: Some heteroskedasticity-consistent covariance matrix estimators with improved finite sample properties. J. Econometrics 29(3), 305--325 (1985). doi: 10.1016/0304-4076(85)90158-7
+
+\bibitem{marchisio2024} Marchisio, K., Ko, W.-Y., B\'erard, A., Dehaze, T., Ruder, S.: Understanding and mitigating language confusion in LLMs. In: Proceedings of EMNLP 2024. pp. 6653--6677 (2024). doi: 10.18653/v1/2024.emnlp-main.380
+
+\bibitem{niyarepola2022} Niyarepola, K., Athapaththu, D., Ekanayake, S., Ranathunga, S.: Math word problem generation with multilingual language models. In: Proceedings of INLG 2022. pp. 144--155 (2022). doi: 10.18653/v1/2022.inlg-main.12
+
+\bibitem{oakes1985} Oakes, J.: Keeping Track: How Schools Structure Inequality. Yale University Press (1985)
+
+\bibitem{rosenthal1968} Rosenthal, R., Jacobson, L.: Pygmalion in the Classroom: Teacher Expectation and Pupils' Intellectual Development. Holt, Rinehart \& Winston (1968)
+
+\bibitem{sclar2023} Sclar, M., Choi, Y., Tsvetkov, Y., Suhr, A.: Quantifying language models' sensitivity to spurious features in prompt design. In: ICLR 2024 (2024)
+
+\bibitem{sheng2019} Sheng, E., Chang, K.-W., Natarajan, P., Peng, N.: The woman worked as a babysitter: On biases in language generation. In: Proceedings of EMNLP-IJCNLP 2019. pp. 3407--3412 (2019). doi: 10.18653/v1/D19-1339
+
+\bibitem{shi2022} Shi, F., Suzgun, M., Freitag, M., et al.: Language models are multilingual chain-of-thought reasoners. In: ICLR 2023 (2023)
+
+\bibitem{steele1995} Steele, C.M., Aronson, J.: Stereotype threat and the intellectual test performance of African Americans. J. Pers. Soc. Psychol. 69(5), 797--811 (1995). doi: 10.1037/0022-3514.69.5.797
+
+\bibitem{umansky2021} Umansky, I.M., Dumont, H.: English learner labeling: How English learner classification in kindergarten shapes teacher perceptions of student skills and the moderating role of bilingual instructional settings. Am. Educ. Res. J. 58(5), 993--1031 (2021)
+
+\bibitem{utami2026} Utami, I.Q., Hwang, W.-Y.: Systematic review on automatic math word problem generation and a comprehensive framework for quality evaluation. Int. J. Sci. Math. Educ. 24, 88 (2026). doi: 10.1007/s10763-026-10715-6
+
+\bibitem{weissburg2025} Weissburg, I., Anand, S., Levy, S., Jeong, H.: LLMs are biased teachers: Evaluating LLM bias in personalized education. In: Findings of NAACL 2025. pp. 5665--5713 (2025). doi: 10.18653/v1/2025.findings-naacl.314
+
+\bibitem{zheng2023} Zheng, L., Chiang, W.-L., Sheng, Y., et al.: Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. In: NeurIPS 2023 Datasets and Benchmarks (2023)
+
+\end{thebibliography}
