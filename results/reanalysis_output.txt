@@ -1,0 +1,136 @@
+Beyond Student Labels - corrected analysis (reconstruction)
+see the module docstring for what does and does not reproduce exactly
+pandas 2.3.3, numpy 2.2.6, python 3.10.12
+
+== 1. Sample ==
+generations=1620 readable=1567 (96.7%)
+parse failure by language: chi2(3)=3.34, p=0.34
+  gptoss: unreadable 1 (0.2%); at advanced level 1
+  llama: unreadable 44 (8.1%); at advanced level 27
+  mistral: unreadable 8 (1.5%); at advanced level 7
+Gemini (dropped): requests answered 138 of 540; parsed 29
+
+== 2. Primary model: additive, HC3, Holm over nine tests (H1, H2, Table 1) ==
+              outcome         term     coef      p       lo       hi       d  p_holm9
+     n_solution_steps     advanced   1.1932 0.0000   0.9098   1.4766  0.4696      NaN
+     n_solution_steps   struggling  -0.0129 0.9145  -0.2483   0.2225 -0.0051      NaN
+     n_solution_steps ell_mandarin  -0.6509 0.0000  -0.9552  -0.3466 -0.2562   0.0002
+     n_solution_steps  ell_spanish  -0.5240 0.0010  -0.8351  -0.2129 -0.2062   0.0067
+     n_solution_steps multilingual  -0.0757 0.6764  -0.4310   0.2797 -0.0298   1.0000
+         n_operations     advanced   7.0438 0.0000   5.3599   8.7276  0.4261      NaN
+         n_operations   struggling   0.3362 0.6086  -0.9505   1.6229  0.0203      NaN
+         n_operations ell_mandarin  -4.2401 0.0000  -6.1529  -2.3273 -0.2565   0.0001
+         n_operations  ell_spanish  -2.6123 0.0099  -4.5973  -0.6274 -0.1580   0.0594
+         n_operations multilingual  -1.5443 0.1655  -3.7270   0.6385 -0.0934   0.8228
+max_operand_magnitude     advanced 114.9909 0.0000  80.5874 149.3944  0.4997      NaN
+max_operand_magnitude   struggling   1.6206 0.6335  -5.0403   8.2815  0.0070      NaN
+max_operand_magnitude ell_mandarin -10.7429 0.3121 -31.5750  10.0892 -0.0467   0.9364
+max_operand_magnitude  ell_spanish -21.9427 0.1646 -52.8847   8.9994 -0.0954   0.8228
+max_operand_magnitude multilingual  -2.1507 0.8935 -33.6295  29.3280 -0.0093   1.0000
+
+log10(largest number), post hoc:
+  advanced      +0.3586  p=0.0000
+  struggling    +0.0088  p=0.6417
+  ell_mandarin  -0.0832  p=0.0075
+  ell_spanish   -0.0957  p=0.0011
+  multilingual  -0.0728  p=0.0176
+
+== 3. Ability x language (the interacted model written in DESIGN.md) ==
+n_solution_steps: joint interaction chi2(6)=14.98, p=0.021
+  ell_mandarin: on_grade -0.10 (p=0.587); struggling -0.76 (p=0.004); advanced -1.15 (p=0.002)
+  ell_spanish: on_grade -0.28 (p=0.106); struggling -0.42 (p=0.105); advanced -0.93 (p=0.013)
+  multilingual: on_grade 0.57 (p=0.073); struggling -0.43 (p=0.096); advanced -0.39 (p=0.308)
+n_operations: joint interaction chi2(6)=9.71, p=0.138
+  ell_mandarin: on_grade -2.14 (p=0.081); struggling -3.27 (p=0.018); advanced -7.67 (p=0.002)
+  ell_spanish: on_grade -1.23 (p=0.320); struggling -0.36 (p=0.807); advanced -6.67 (p=0.007)
+  multilingual: on_grade -0.44 (p=0.757); struggling -1.84 (p=0.247); advanced -2.63 (p=0.319)
+
+== 4. Output language (deterministic rule) ==
+lang_rule      en   es  zh
+language                  
+control       388    0   0
+ell_mandarin  294    0  95
+ell_spanish   196  199   0
+multilingual  393    2   0
+
+lang_rule        en    es    zh
+language                       
+control       100.0   0.0   0.0
+ell_mandarin   75.6   0.0  24.4
+ell_spanish    49.6  50.4   0.0
+multilingual   99.5   0.5   0.0
+
+switch rate by label and model:
+                            mean  sum  count
+language     model_family                   
+ell_mandarin gptoss        0.015    2    135
+             llama         0.000    0    119
+             mistral       0.689   93    135
+ell_spanish  gptoss        0.015    2    135
+             llama         0.568   71    125
+             mistral       0.933  126    135
+
+English by rule: 1271; of these langdetect had labelled 152 as another language (45 were controls)
+GPT-OSS ELL-Spanish problems containing Spanish markers: 25 of 135   [paper: 29 of 135 - see the provenance note]
+
+== 5. Reading grade, English output only (H3) ==
+n=1119
+  ell_mandarin  -0.6805  p=0.0001  d=-0.265
+  ell_spanish   -0.1858  p=0.4149  d=-0.072
+  multilingual  -0.3574  p=0.0290  d=-0.139
+  [paper: ELL-Mandarin -0.77 p=.0003; ELL-Spanish +0.03 p=.94; multilingual -0.42 p=.046 - see the provenance note]
+
+== 6. Robustness (nine-test Holm throughout) ==
+clustered on 539 design cells
+              outcome         term     coef  p_holm9
+     n_solution_steps ell_mandarin  -0.6509   0.0011
+     n_solution_steps  ell_spanish  -0.5240   0.0284
+     n_solution_steps multilingual  -0.0757   1.0000
+         n_operations ell_mandarin  -4.2401   0.0003
+         n_operations  ell_spanish  -2.6123   0.0754
+         n_operations multilingual  -1.5443   0.9804
+max_operand_magnitude ell_mandarin -10.7429   1.0000
+max_operand_magnitude  ell_spanish -21.9427   0.9804
+max_operand_magnitude multilingual  -2.1507   1.0000
+
+near-duplicates removed: 107; n=1460   [paper: 106 removed, n=1461]
+              outcome         term     coef  p_holm9
+     n_solution_steps ell_mandarin  -0.7210   0.0002
+     n_solution_steps  ell_spanish  -0.5485   0.0096
+     n_solution_steps multilingual  -0.1237   1.0000
+         n_operations ell_mandarin  -4.0848   0.0001
+         n_operations  ell_spanish  -2.3240   0.1047
+         n_operations multilingual  -1.2910   0.9682
+max_operand_magnitude ell_mandarin -10.1501   1.0000
+max_operand_magnitude  ell_spanish -24.8272   0.7111
+max_operand_magnitude multilingual  -3.1213   1.0000
+
+English-only output: n=1271
+              outcome         term     coef  p_holm9
+     n_solution_steps ell_mandarin  -0.4305   0.0362
+     n_solution_steps  ell_spanish  -0.2944   0.6866
+     n_solution_steps multilingual  -0.0698   1.0000
+         n_operations ell_mandarin  -2.6851   0.0422
+         n_operations  ell_spanish  -1.2714   0.8834
+         n_operations multilingual  -1.4980   0.8510
+max_operand_magnitude ell_mandarin -16.5270   0.8510
+max_operand_magnitude  ell_spanish -31.8533   0.0391
+max_operand_magnitude multilingual  -1.9077   1.0000
+
+H4: Cohen's d of the pooled ELL contrast, by prompt wording
+  n_solution_steps: [-0.293, -0.235, -0.237]  range 0.058
+  n_operations: [-0.184, -0.262, -0.19]  range 0.078
+  max_operand_magnitude: [-0.192, -0.118, -0.012]  range 0.180
+
+== 7. Answer keys and judge validity ==
+judge flags a wrong key in 22.1% of problems
+  by model: {'gptoss': np.float64(0.4), 'llama': np.float64(38.5), 'mistral': np.float64(28.9)}
+  by label: {'control': np.float64(25.8), 'ell_mandarin': np.float64(18.8), 'ell_spanish': np.float64(18.5), 'multilingual': np.float64(25.6)}
+
+== 8. The correct-key subset (the paper's largest caveat, Sect. 5) ==
+problems whose key the judge accepted: n=1220
+  solution steps  ell_mandarin  -0.334  p=0.0083
+  solution steps  ell_spanish   -0.188  p=0.1573
+  solution steps  multilingual  -0.001  p=0.9914
+
+done.

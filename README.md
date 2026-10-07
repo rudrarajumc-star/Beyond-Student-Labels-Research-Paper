@@ -143,6 +143,14 @@ build_prompt_matrix.py -> generate.py -> evaluate.py -> judge.py -> analyze.py
 `analyze.py` is kept unchanged as the record of the original, superseded analysis. The
 camera-ready numbers come from the specification in `verify_paper.py`. See `CORRECTIONS.md`.
 
+The paper's Data and Code Availability note says `reanalysis.py` is available on request. The
+original file was lost in a local disk cleanup; [`src/reanalysis.py`](src/reanalysis.py) is a
+**reconstruction**, rebuilt from the committed data against the numbers printed in the paper.
+It reproduces the sample counts, the entire primary model (H1, H2 and Table 1), the
+output-language table, the clustered-SE robustness check, the answer-key rates and the
+correct-key subset exactly; four secondary quantities do not, and its docstring names each one
+with the paper's value beside it. For anything published, `verify_paper.py` is the authority.
+
 ## Repository layout
 
 ```
@@ -156,6 +164,7 @@ src/
   build_prompt_matrix.py, generate.py, evaluate.py, judge.py, run_study.py   pipeline
   analyze.py           original analysis (superseded; kept for the record)
   verify_paper.py      recomputes and checks every number in the camera-ready
+  reanalysis.py        the full corrected analysis (reconstruction — see its docstring)
   validate_judge.py    judge-vs-human validity
 data/                Prompt matrix, raw generations, per-item metrics, judgments, human ratings
 results/
