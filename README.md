@@ -7,11 +7,15 @@
 **Accepted for oral presentation at SIMBig 2026; to appear in Springer CCIS.**
 Camera-ready submitted 5 October 2026 · MIT (code) / CC BY 4.0 (text & figures)
 
-📄 **The paper:** [`simbig2026/104.pdf`](simbig2026/104.pdf)
-⚠️ **Read first if you saw an earlier version:** [`CORRECTIONS.md`](CORRECTIONS.md)
-✅ **Verify every number yourself:** `python3 src/verify_paper.py`
+### 📄 [**Read the paper (PDF, 11 pages)**](simbig2026/104.pdf)
+
+[![Paper](https://img.shields.io/badge/paper-PDF-B31B1B?style=for-the-badge)](simbig2026/104.pdf)
+[![Verified](https://img.shields.io/badge/69%20checks-all%20passing-2F6F6B?style=for-the-badge)](results/verify_paper_output.txt)
+[![Corrections](https://img.shields.io/badge/read%20first-CORRECTIONS-6D2E46?style=for-the-badge)](CORRECTIONS.md)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21824157-1E2761?style=for-the-badge)](https://doi.org/10.5281/zenodo.21824157)
+
 🧾 **Analysis plan:** [`DESIGN.md`](DESIGN.md) · 📊 **Columns:** [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md)
-🔖 **Archive of the earlier preprint:** [10.5281/zenodo.21824157](https://doi.org/10.5281/zenodo.21824157)
+✅ **Verify every number yourself:** `python3 src/verify_paper.py`
 
 > A re-analysis after acceptance found an error in the statistical specification. The headline
 > result changed from a null to a significant effect, and one secondary claim was withdrawn
@@ -50,6 +54,12 @@ statement that the student is *behind in mathematics* moved nothing, while namin
 student's first language shortened the written solution by about half a step. Pooled effects
 are small: Cohen's *d* = −0.21 to −0.26.
 
+![Effect of each language label on solution steps, by model and pooled, with 95% confidence intervals. The shaded band marks the equivalence region, |d| < 0.2.](results/figures/104-fig1.png)
+
+*Figure 1 — the effect of each language label on solution steps, by model and pooled, averaged
+over ability levels, with 95% confidence intervals. The shaded band is the equivalence region,
+|d| < 0.2.*
+
 Also:
 
 - **The manipulation check works.** An "advanced" label raised solution steps by 1.19,
@@ -68,6 +78,11 @@ Also:
 - **Language simplification is uneven.** On English output (*n* = 1,271), ELL-Mandarin lowered
   Flesch-Kincaid grade by 0.77 (*p* = .0003) and "multilingual" by 0.42 (*p* = .046);
   ELL-Spanish did not (+0.03, *p* = .94).
+
+![Mean Flesch-Kincaid reading grade by condition and model for English-language problems, with standard-error bars.](results/figures/104-fig2.png)
+
+*Figure 2 — mean Flesch-Kincaid grade by condition and model, English problems only, with
+standard-error bars. Mistral's ELL-Spanish mean (12.1) rests on 9 items and is off scale.*
 
 ## What this does *not* show
 
